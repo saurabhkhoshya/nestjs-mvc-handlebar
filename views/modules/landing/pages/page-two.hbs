@@ -1,4 +1,5 @@
-<p>fdas</p>
+{{message}}
+
 {{#> layouts/base title="Page Two" }}
   {{!-- Let's add a second stylesheet for this layout. --}}
   {{#*inline "head-block"}}
@@ -16,6 +17,7 @@
   {{!-- Let's override the "footer-block" content. --}}
   {{#*inline "footer-block"}}
     <p>We are now overriding the default "footer-block" content with this content.</p>
+    {{footer}}
   {{/inline}}
 
   {{!-- Let's add a script for this layout. --}}
