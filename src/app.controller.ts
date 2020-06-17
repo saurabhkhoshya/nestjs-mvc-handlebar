@@ -5,6 +5,8 @@ import { AppService } from './app.service';
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
+  // views inspired by
+  // https://cloudfour.com/thinks/the-hidden-power-of-handlebars-partials/#fnref-4803-1
   @Get()
   @Render('modules/landing/pages/page-two')
   root() {
