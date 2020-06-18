@@ -1,5 +1,5 @@
 {{message}}
-
+sdfsaf
 {{#> layouts/base  }}
 
  
@@ -7,7 +7,9 @@
   {{!-- Let's add a second stylesheet for this layout. --}}
   {{#*inline "head-block"}}
     <link rel="stylesheet" href="some-other-styles.css">
+    {{> ga}}
   {{/inline}}
+
 
   {{!-- Let's change the hero image for this layout. --}}
   {{#*inline "hero-block"}}
@@ -21,7 +23,10 @@
 
   {{!-- Let's override the "footer-block" content. --}}
   {{#*inline "footer-block"}}
-    <p>We are now overriding the default "footer-block" content with this content.</p>
+    <p>We are now overriding the default "footer-block" content with this content.
+      <br>
+      This footer block is for mo2 block
+    </p>
     {{footer}}
   {{/inline}}
 

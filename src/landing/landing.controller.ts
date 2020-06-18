@@ -4,7 +4,7 @@ import { Get, Controller, Render } from '@nestjs/common';
 export class LandingController {
 
     @Get()
-    @Render('landing/views/footer')
+    @Render('modules/mo-2/pages/page-two')
     root() {
       return { message: 'this message should dispaly before partial block layouts/base ', footer:"This message should display in footer" };
     }
